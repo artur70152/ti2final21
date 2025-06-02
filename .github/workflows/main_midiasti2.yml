@@ -26,7 +26,7 @@ jobs:
       - name: Copiar e renomear o JAR como app.jar
         run: |
           mkdir package
-          cp target/*.jar package/app.jar
+          cp target/app.jar
 
       - name: Compactar em deploy.zip
         run: |
