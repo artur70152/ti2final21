@@ -23,10 +23,7 @@ jobs:
       - name: Build com Maven
         run: mvn clean package
 
-      - name: Copiar e renomear o JAR como app.jar
-        run: |
-          mkdir package
-          cp target/*-shaded.jar package/app.jar
+  
 
 
       - name: Compactar em deploy.zip
