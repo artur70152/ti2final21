@@ -26,5 +26,5 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: midiasti2
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F15E5D2503114DDA9DEFCF5BDC219878 }}
           package: target/01HelloWordSparkFramework-0.0.1-SNAPSHOT.jar
