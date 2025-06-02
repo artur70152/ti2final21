@@ -1,10 +1,9 @@
-name: Build and deploy Java JAR to Azure Web App
+name: Azure Deploy Java
 
 on:
   push:
     branches:
-      - main
-  workflow_dispatch:
+      - main  # ou 'master' se seu repositório usar master
 
 jobs:
   build-and-deploy:
@@ -23,25 +22,9 @@ jobs:
       - name: Build com Maven
         run: mvn clean package
 
-      - name: Verificar arquivos gerados
-        run: ls -lh target/
-
-      - name: Encontrar e copiar JAR como app.jar
-        run: |
-          mkdir -p package
-          JAR_FILE=$(find target -name "*.jar" | head -n 1)
-          echo "Encontrado: $JAR_FILE"
-          cp "$JAR_FILE" package/app.jar
-
-      - name: Compactar para deploy.zip
-        run: |
-          cd package
-          zip -r ../deploy.zip .
-
       - name: Deploy para Azure Web App
         uses: azure/webapps-deploy@v3
         with:
           app-name: midiasti2
-          slot-name: Production
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_MIDIASTI2 }}
-          package: deploy.zip
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
+          package: target/01HelloWordSparkFramework-0.0.1-SNAPSHOT.jar
