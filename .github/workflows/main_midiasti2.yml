@@ -1,9 +1,10 @@
-name: Azure Deploy Java
+name: Build and Deploy Java to Azure Web App
 
 on:
   push:
     branches:
-      - main  # ou 'master' se seu repositório usar master
+      - main
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
@@ -26,5 +27,6 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: midiasti2
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F15E5D2503114DDA9DEFCF5BDC219878 }}
-          package: target/01HelloWordSparkFramework-0.0.1-SNAPSHOT.jar
+          slot-name: Production
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_MIDIASTI2 }}
+          package: target/app.jar
