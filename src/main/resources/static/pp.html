@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed de Fotos e Mensagens</title>
+    <style>
+		body {
+		    margin: 0;
+		    padding: 0;
+		    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		    background: linear-gradient(to bottom right, #e8f0fe, #ffffff);
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    min-height: 100vh;
+		    overflow-x: hidden;
+		    position: relative;
+		}
+		.profile-container {
+		    position: fixed;
+		    top: 10px;
+		    left: 10px;
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    text-align: center;
+		}
+		.profile-button {
+		    width: 60px;
+		    height: 60px;
+		    border-radius: 50%;
+		    background-color: #fff;
+		    overflow: hidden;
+		    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+		    cursor: pointer;
+		    transition: transform 0.3s ease;
+		}
+		.profile-button:hover {
+		    transform: scale(1.05);
+		}
+		.profile-button img {
+		    width: 100%;
+		    height: 100%;
+		    object-fit: cover;
+		    border-radius: 50%;
+		}
+		.profile-name {
+		    font-size: 12px;
+		    color: #444;
+		    margin-top: 5px;
+		    font-weight: bold;
+		}
+		.profile-action-button,
+		.sendmessagebutton {
+		    margin-top: 5px;
+		    padding: 5px 10px;
+		    font-size: 12px;
+		    cursor: pointer;
+		    border: none;
+		    background-color: #3b82f6;
+		    color: white;
+		    border-radius: 20px;
+		    transition: background 0.3s ease;
+		}
+		.profile-action-button:hover,
+		.sendmessagebutton:hover {
+		    background-color: #2563eb;
+		}
+		.photo-container {
+		    background: #ffffff;
+		    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		    border-radius: 10px;
+		    padding: 12px;
+		    margin-bottom: 20px;
+		    transition: transform 0.3s ease;
+		}
+		.photo-container:hover {
+		    transform: translateY(-3px);
+		}
+		.photo {
+		    width: 100%;
+		    max-height: 300px;
+		    object-fit: cover;
+		    border-radius: 8px;
+		}
+		.arte-descricao {
+		    margin-top: 8px;
+		    font-size: 15px;
+		    color: #333;
+		    text-align: left;
+		    white-space: pre-wrap;
+		    word-break: break-word;
+		}
+		.top-right-button {
+		    position: fixed;
+		    top: 10px;
+		    right: 10px;
+		    padding: 5px 10px;
+		    font-size: 12px;
+		    cursor: pointer;
+		    border: none;
+		    background: #ef4444;
+		    color: white;
+		    border-radius: 6px;
+		    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+		    transition: background 0.3s ease;
+		}
+		.top-right-button:hover {
+		    background: #dc2626;
+		}
+		.feed {
+		    width: 80%;
+		    max-width: 600px;
+		    margin-top: 80px;
+		    text-align: center;
+		}
+		.photo-actions {
+		    display: flex;
+		    justify-content: space-around;
+		    margin-top: 10px;
+		}
+		.photo-action {
+		    cursor: pointer;
+		    color: #444;
+		    font-size: 16px;
+		    transition: color 0.3s ease;
+		}
+		.photo-action:hover {
+		    color: #111;
+		}
+		.comments-section {
+		    margin-top: 10px;
+		    text-align: left;
+		}
+		.comment {
+		    padding: 5px 0;
+		    border-bottom: 1px solid #ddd;
+		}
+		.comment-user {
+		    font-weight: bold;
+		    color: #555;
+		}
+		.comment-text {
+		    margin-left: 10px;
+		    color: #333;
+		}
+		.new-comment {
+		    display: flex;
+		    margin-top: 10px;
+		}
+		.new-comment input {
+		    flex: 1;
+		    padding: 5px;
+		    font-size: 14px;
+		    border: 1px solid #ddd;
+		    border-radius: 4px;
+		}
+		.new-comment button {
+		    padding: 5px 10px;
+		    font-size: 14px;
+		    cursor: pointer;
+		    border: none;
+		    background-color: #10b981;
+		    color: white;
+		    border-radius: 4px;
+		}
+		.new-comment button:hover {
+		    background-color: #059669;
+		}
+		.message-button {
+		    position: fixed;
+		    bottom: 10px;
+		    right: 10px;
+		    width: 60px;
+		    height: 60px;
+		    border-radius: 50%;
+		    background-color: #4CAF50;
+		    color: white;
+		    font-size: 24px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    cursor: pointer;
+		    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+		}
+		.message-list {
+		    position: fixed;
+		    bottom: 80px;
+		    right: 10px;
+		    background-color: white;
+		    border-radius: 10px;
+		    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+		    padding: 12px;
+		    display: none;
+		    width: 250px;
+		}
+		.message-user {
+		    display: flex;
+		    align-items: center;
+		    margin-bottom: 10px;
+		    cursor: pointer;
+		    font-weight: bold;
+		    color: #333;
+		}
+		.message-user:hover {
+		    color: #111;
+		}
+		.conversation-photo {
+		    width: 30px;
+		    height: 30px;
+		    border-radius: 50%;
+		    object-fit: cover;
+		    margin-right: 10px;
+		}
+		.message-input {
+		    display: flex;
+		    margin-top: 10px;
+		}
+		.message-input input {
+		    flex: 1;
+		    padding: 5px;
+		    font-size: 14px;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		}
+		.message-input button {
+		    padding: 5px 10px;
+		    font-size: 14px;
+		    cursor: pointer;
+		    border: none;
+		    background-color: #3b82f6;
+		    color: white;
+		    border-radius: 4px;
+		}
+		.message-input button:hover {
+		    background-color: #2563eb;
+		}
+		.messages {
+		    max-height: 200px;
+		    overflow-y: auto;
+		    margin-top: 10px;
+		    display: flex;
+		    flex-direction: column;
+		    gap: 5px;
+		}
+		.message {
+		    padding: 5px;
+		    border-bottom: 1px solid #ddd;
+		    white-space: pre-wrap;
+		    word-break: break-word;
+		    width: 100%;
+		    box-sizing: border-box;
+		}
+		.top-bar {
+		    display: flex;
+		    justify-content: space-between;
+		    align-items: center;
+		    padding: 10px 20px;
+		    background-color: #dbeafe;
+		    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+		}
+		.search-container {
+		    display: flex;
+		    align-items: center;
+		    gap: 10px;
+		    flex-grow: 1;
+		    justify-content: center;
+		}
+		#searchInput {
+		    padding: 8px;
+		    border: 1px solid #ccc;
+		    border-radius: 6px;
+		    font-size: 14px;
+		    width: 1200px;
+		    max-width: 100%;
+		    min-width: 300px;
+		    box-sizing: border-box;
+		}
+		.search-container button {
+		    padding: 8px 12px;
+		    background-color: #3b82f6;
+		    color: white;
+		    border: none;
+		    border-radius: 6px;
+		    cursor: pointer;
+		    font-size: 14px;
+		}
+		.search-container button:hover {
+		    background-color: #2563eb;
+		}
+		.popup-overlay {
+		    position: fixed;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		    background: rgba(0, 0, 0, 0.5);
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    visibility: hidden;
+		    opacity: 0;
+		    transition: visibility 0.3s, opacity 0.3s;
+		}
+		.popup-overlay.active {
+		    visibility: visible;
+		    opacity: 1;
+		}
+		.popup {
+		    background: white;
+		    padding: 20px;
+		    border-radius: 10px;
+		    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+		    text-align: center;
+		    max-width: 400px;
+		    width: 100%;
+		}
+		.popup input {
+		    width: 80%;
+		    padding: 10px;
+		    margin-bottom: 10px;
+		    border: 1px solid #ccc;
+		    border-radius: 6px;
+		}
+		.popup button {
+		    padding: 10px 20px;
+		    border: none;
+		    border-radius: 6px;
+		    background: #4CAF50;
+		    color: white;
+		    cursor: pointer;
+		}
+		.popup button:hover {
+		    background: #388e3c;
+		}
+
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <!-- Botão na parte superior direita -->
+        
+
+        <!-- Input e botão de pesquisar no centro -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Pesquisar...">
+            <button onclick="performSearch()">🔍</button>
+        </div>
+    </div>
+
+    <h1 id="nomedeperfil"></h1>
+    <div class="profile-container">
+        <div class="profile-button" id="profileButton" onclick="gotoemail1()">
+            <!-- A imagem do perfil será carregada dinamicamente -->
+        </div>
+        <span class="profile-name" id="profileName"></span> <!-- Nome do usuário -->
+     
+
+        <!-- O botão será gerado dinamicamente -->
+    
+    </div>
+
+    <!-- Novo botão na parte superior direita -->
+    <button class="top-right-button" onclick="openSettings()">LOG OUT</button>
+
+    <div class="feed" id="feed">
+        <!-- As fotos e comentários serão inseridos dinamicamente aqui -->
+    </div>
+
+    <!-- Bolota para abrir a lista de mensagens -->
+    <div class="message-button" onclick="toggleMessageList()">💬</div>
+
+    <!-- Lista de mensagens -->
+    <div class="message-list" id="messageList">
+        <h4>Conversas</h4>
+        <div id="conversationList"></div>
+        <div class="messages" id="messages"></div>
+        <div class="message-input">
+            <input type="text" id="newMessageInput" placeholder="Escreva uma mensagem...">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+
+    <script src="pp.js"></script>
+</body>
+</html>

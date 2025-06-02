@@ -1,0 +1,31 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: DescriptArt
+authors:
+  - family-names: Artur Fernandes Braga de Menezes
+    given-names: 
+  - family-names: João Comini César de Andrade
+    given-names: 
+  - family-names: Tarcisio Ferraz Juste Silva
+    given-names: 
+  - family-names: Victor Lima Sedlmaier
+    given-names: 
+  - family-names: 
+    given-names: 
+  - family-names: 
+    given-names:
+  - name-suffix: Max do Val Machado
+    affiliation: PUC Minas
+    family-names: 
+    given-names: 
+  - name-suffix: Jeanne Louize Emygdio
+    affiliation: PUC Minas
+    family-names: 
+    given-names: 
+keywords:
+  - 
+  - 
+repository-code: 
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2022-07-14

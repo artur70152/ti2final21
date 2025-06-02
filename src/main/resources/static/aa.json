@@ -1,0 +1,844 @@
+[
+  {
+    "name": "artur",
+    "normal": true,
+    "doacoes": 0,
+    "email": "artur70152@gmail.com",
+    "senha": "123",
+    "foto": "/images/1732884775606-print3.PNG",
+    "artes": [
+      {
+        "arte": "/images/fff.jpg",
+        "name": "zzz",
+        "curtidas": 11,
+        "usuariosQueCurtiram": [
+          "usuario1@gmail.com",
+          "usuario2@gmail.com",
+          "artur70152@gmail.com"
+        ],
+        "comentarios": [
+          {
+            "usuario": "Usuário Exemplo",
+            "texto": "Excelente arte!"
+          },
+          {
+            "usuario": "Outro Usuário",
+            "texto": "Gostei muito dessa arte."
+          },
+          {
+            "usuario": "Usuário Exemplo",
+            "texto": "Excelente arte!"
+          },
+          {
+            "usuario": "Você",
+            "texto": "sds"
+          },
+          {
+            "usuario": "Você",
+            "texto": "xcx"
+          },
+          {
+            "usuario": "Você",
+            "texto": "SA"
+          },
+          {
+            "usuario": "Você",
+            "texto": "CC"
+          },
+          {
+            "usuario": "Você",
+            "texto": "SDS"
+          },
+          {
+            "usuario": "Você",
+            "texto": "SSS"
+          },
+          {
+            "usuario": "Você",
+            "texto": "CC"
+          },
+          {
+            "usuario": "Você",
+            "texto": "CC"
+          },
+          {
+            "usuario": "Você",
+            "texto": "xx"
+          },
+          {
+            "usuario": "Você",
+            "texto": "xz"
+          },
+          {
+            "usuario": "Você",
+            "texto": "xccxc"
+          },
+          {
+            "usuario": "Você",
+            "texto": "sada"
+          },
+          {
+            "usuario": "Você",
+            "texto": "cxzatttttttt"
+          },
+          {
+            "usuario": "Você",
+            "texto": "fff"
+          },
+          {
+            "usuario": "Você",
+            "texto": "sss"
+          },
+          {
+            "usuario": "Você",
+            "texto": "xcx"
+          },
+          {
+            "usuario": "Você",
+            "texto": "knjnkjnbol"
+          },
+          {
+            "usuario": "Você",
+            "texto": "XXX"
+          },
+          {
+            "usuario": "Você",
+            "texto": "XXXZ"
+          },
+          {
+            "usuario": "Você",
+            "texto": "xcx"
+          },
+          {
+            "usuario": "Você",
+            "texto": "xxx"
+          },
+          {
+            "usuario": "Você",
+            "texto": "xzx"
+          },
+          {
+            "usuario": "Você",
+            "texto": "zxvvv"
+          },
+          {
+            "usuario": "Você",
+            "texto": "xbb"
+          },
+          {
+            "usuario": "Você",
+            "texto": "sss"
+          },
+          {
+            "usuario": "Você",
+            "texto": "sdcxz"
+          },
+          {
+            "usuario": "Você",
+            "texto": "sda"
+          }
+        ]
+      },
+      {
+        "arte": "/images/fff.jpg",
+        "name": "nnn",
+        "curtidas": 7,
+        "usuariosQueCurtiram": [
+          "usuario1@gmail.com",
+          "usuario2@gmail.com",
+          "artur70152@gmail.com"
+        ],
+        "comentarios": [
+          {
+            "usuario": "Usuário Exemplo",
+            "texto": "Excelente arte!"
+          },
+          {
+            "usuario": "Outro Usuário",
+            "texto": "Gostei muito dessa arte."
+          },
+          {
+            "usuario": "Você",
+            "texto": "asdas"
+          },
+          {
+            "usuario": "Você",
+            "texto": "ss"
+          },
+          {
+            "usuario": "Você",
+            "texto": "xcx"
+          }
+        ]
+      },
+      {
+        "arte": "/images/fff.jpg",
+        "name": "cvbn",
+        "curtidas": 4,
+        "usuariosQueCurtiram": [
+          "usuario1@gmail.com",
+          "usuario2@gmail.com",
+          "artur70152@gmail.com"
+        ],
+        "comentarios": [
+          {
+            "usuario": "Usuário Exemplo",
+            "texto": "Excelente arte!"
+          },
+          {
+            "usuario": "Outro Usuário",
+            "texto": "Gostei muito dessa arte."
+          },
+          {
+            "usuario": "Você",
+            "texto": "FGFG"
+          },
+          {
+            "usuario": "Você",
+            "texto": "xx"
+          }
+        ]
+      },
+      {
+        "arte": "/images/fff.jpg",
+        "name": "vcv",
+        "curtidas": 5,
+        "usuariosQueCurtiram": [
+          "usuario1@gmail.com",
+          "usuario2@gmail.com"
+        ],
+        "comentarios": [
+          {
+            "usuario": "Usuário Exemplo",
+            "texto": "Excelente arte!"
+          },
+          {
+            "usuario": "Outro Usuário",
+            "texto": "Gostei muito dessa arte."
+          }
+        ]
+      },
+      {
+        "arte": "/images/fff.jpg",
+        "name": "vvv",
+        "curtidas": 5,
+        "usuariosQueCurtiram": [
+          "usuario1@gmail.com",
+          "usuario2@gmail.com",
+          "artur70152@gmail.com"
+        ],
+        "comentarios": [
+          {
+            "usuario": "",
+            "texto": ""
+          },
+          {
+            "usuario": "Você",
+            "texto": "dd"
+          }
+        ]
+      },
+      {
+        "arte": "/images/1732284858547-print3.PNG",
+        "name": "asas",
+        "curtidas": 3,
+        "usuariosQueCurtiram": [
+          "usuario1@gmail.com",
+          "usuario2@gmail.com"
+        ],
+        "comentarios": [
+          {
+            "usuario": "",
+            "texto": ""
+          }
+        ]
+      },
+      {
+        "arte": "/images/1732285277931-sds.PNG",
+        "name": "vv",
+        "curtidas": 14,
+        "usuariosQueCurtiram": [
+          "usuario1@gmail.com",
+          "usuario2@gmail.com"
+        ],
+        "comentarios": [
+          {
+            "usuario": "Você",
+            "texto": "0000"
+          },
+          {
+            "usuario": "Você",
+            "texto": "nnn"
+          },
+          {
+            "usuario": "Você",
+            "texto": "cc"
+          },
+          {
+            "usuario": "Você",
+            "texto": "xcxz"
+          },
+          {
+            "usuario": "Você",
+            "texto": "jj"
+          },
+          {
+            "usuario": "Você",
+            "texto": "xcz"
+          },
+          {
+            "usuario": "Você",
+            "texto": "xbb"
+          },
+          {
+            "usuario": "Você",
+            "texto": "kkk"
+          },
+          {
+            "usuario": "Você",
+            "texto": "cvc"
+          },
+          {
+            "usuario": "Você",
+            "texto": "bbb"
+          },
+          {
+            "usuario": "Você",
+            "texto": "x"
+          },
+          {
+            "usuario": "Você",
+            "texto": "asd"
+          },
+          {
+            "usuario": "Você",
+            "texto": "aaaaa"
+          },
+          {
+            "usuario": "Você",
+            "texto": "sd"
+          },
+          {
+            "usuario": "Você",
+            "texto": "sds"
+          },
+          {
+            "usuario": "Você",
+            "texto": "123456"
+          },
+          {
+            "usuario": "Você",
+            "texto": "34"
+          },
+          {
+            "usuario": "Você",
+            "texto": "as"
+          },
+          {
+            "usuario": "Você",
+            "texto": "OLA"
+          }
+        ]
+      },
+      {
+        "arte": "/images/1732733347044-MONITORIA.PNG",
+        "comentarios": [
+          {
+            "usuario": "Você",
+            "texto": "csaca"
+          }
+        ],
+        "usuariosQueCurtiram": [
+          "artur70152@gmail.com"
+        ],
+        "curtidas": 1
+      },
+      {
+        "arte": "/images/1732735656714-MONITORIA.PNG",
+        "name": "MONITORIA",
+        "curtidas": 1,
+        "usuariosQueCurtiram": [
+          "artur70152@gmail.com"
+        ],
+        "comentarios": [
+          {
+            "usuario": "Você",
+            "texto": "cc"
+          }
+        ]
+      },
+      {
+        "arte": "/images/1732884973377-Anime1.jpg",
+        "name": "Anime1",
+        "curtidas": 0,
+        "usuariosQueCurtiram": [],
+        "comentarios": []
+      }
+    ],
+    "mensagens": [
+      {
+        "nome": "bruna3",
+        "foto": "/images/1732376152475-sds.PNG",
+        "usuario": "arturf123ss@gmail.com",
+        "mensagens": [
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          "Você: asdasxcx",
+          ".",
+          ".",
+          "Você: pedrope",
+          "xxx",
+          "ppr",
+          "hhh",
+          "Você: vvv",
+          "xxx",
+          "Você: cc",
+          "Você: oi bruna",
+          "oi artur",
+          ".",
+          "Você: .",
+          ".",
+          ".",
+          "asd",
+          ".",
+          "Você: ppx",
+          "Você: xcx",
+          "fff",
+          "Você: xcxzggggg",
+          "oi artur",
+          "Você: oi bruna",
+          "oioi de novo",
+          "Você: asda",
+          "Você: xx",
+          "Você: 123",
+          "RRRRR",
+          "Você: acabei de adicionar",
+          "Você: .",
+          "Você: .",
+          "Você: oi bruna"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "bruna",
+    "normal": true,
+    "doacoes": 0,
+    "email": "arturf123@gmail.com",
+    "senha": "ASD",
+    "foto": "/images/fff.jpg",
+    "artes": [
+      {
+        "arte": "/images/fff.jpg",
+        "name": "xzz",
+        "curtidas": 1,
+        "comentarios": [
+          {
+            "usuario": "",
+            "texto": ""
+          },
+          {
+            "usuario": "Você",
+            "texto": "asda"
+          },
+          {
+            "usuario": "Você",
+            "texto": "cx"
+          }
+        ],
+        "usuariosQueCurtiram": [
+          "arturf123@gmail.com"
+        ]
+      },
+      {
+        "arte": "/images/fff.jpg",
+        "name": "xzz",
+        "curtidas": 1,
+        "comentarios": [
+          {
+            "usuario": "",
+            "texto": ""
+          },
+          {
+            "usuario": "Você",
+            "texto": "xc"
+          },
+          {
+            "usuario": "Você",
+            "texto": "xc"
+          },
+          {
+            "usuario": "Você",
+            "texto": "z"
+          }
+        ],
+        "usuariosQueCurtiram": [
+          "arturf123@gmail.com"
+        ]
+      }
+    ],
+    "mensagens": [
+      {
+        "usuario": "",
+        "mensagens": []
+      },
+      {
+        "usuario": "Você",
+        "mensagens": [
+          "SS",
+          "asd",
+          "dxc",
+          "gvx",
+          "mas eu nao sei porque entende ?",
+          "ssssssssssssssssssssssssssssssssssssssssssss",
+          "ccc",
+          "xcxcx",
+          "cxcx",
+          "xcxczxczxc",
+          "sad",
+          "sad"
+        ]
+      },
+      {
+        "usuario": "artur70152@gmail.com",
+        "mensagens": [
+          "Remetente: sss",
+          "sss",
+          "Remetente: sadsxz",
+          "sadsxz",
+          "Remetente: sadxc",
+          "sadxc",
+          "Remetente: asdas",
+          "asdas",
+          "Remetente: ss",
+          "ss",
+          "Remetente: xcx",
+          "xcx",
+          "Remetente: zxczxc",
+          "zxczxc",
+          "Remetente: sd",
+          "sd",
+          "Remetente: sd",
+          "sd",
+          "Remetente: sadsas",
+          "sadsas",
+          "Remetente: asda",
+          "asda",
+          "Remetente: asdas",
+          "asdas",
+          "Remetente: asdas",
+          "asdas",
+          "Remetente: asd",
+          "asd",
+          "Remetente: asddf",
+          "asddf",
+          "Remetente: asdaxc",
+          "asdaxc",
+          "Remetente: sa",
+          "sa",
+          "Remetente: xc",
+          "xc",
+          "Remetente: rrr",
+          "rrr",
+          "Remetente: sss",
+          "sss",
+          "Remetente: asdas",
+          "asdas",
+          "Remetente: pedra",
+          "pedra",
+          "Remetente: gfgf",
+          "gfgf",
+          "Remetente: fca",
+          "fca",
+          "Remetente: xcxz",
+          "xcxz",
+          "Remetente: sasd",
+          "sasd",
+          "Remetente: xcx",
+          "xcx",
+          "Remetente: xcxcxz",
+          "xcxcxz",
+          "Remetente: lmknolkn",
+          "lmknolkn",
+          "Remetente: XXX",
+          "XXX",
+          "Remetente: ASDASX",
+          "ASDASX",
+          "Remetente: sd",
+          "sd",
+          "Remetente: xc",
+          "xc"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "bruna3",
+    "doacoes": 23094,
+    "normal": true,
+    "email": "arturf123ss@gmail.com",
+    "senha": "ASD",
+    "foto": "/images/fff.jpg",
+    "artes": [
+      {
+        "arte": "/images/fff.jpg",
+        "name": "xxx",
+        "curtidas": 1,
+        "comentarios": [
+          {
+            "usuario": "Você",
+            "texto": "dfsadfs"
+          },
+          {
+            "usuario": "Você",
+            "texto": "sx"
+          },
+          {
+            "usuario": "Você",
+            "texto": "sdasd"
+          },
+          {
+            "usuario": "Você",
+            "texto": "cc"
+          },
+          {
+            "usuario": "Você",
+            "texto": "xcx"
+          },
+          {
+            "usuario": "Você",
+            "texto": "xx"
+          },
+          {
+            "usuario": "Você",
+            "texto": "ssd"
+          },
+          {
+            "usuario": "Você",
+            "texto": "xc"
+          },
+          {
+            "usuario": "Você",
+            "texto": "zx"
+          },
+          {
+            "usuario": "Você",
+            "texto": "asd"
+          },
+          {
+            "usuario": "Você",
+            "texto": "asdasd"
+          },
+          {
+            "usuario": "Você",
+            "texto": "xxx"
+          },
+          {
+            "usuario": "Você",
+            "texto": "primeiro comentario"
+          }
+        ],
+        "usuariosQueCurtiram": [
+          "arturf123ss@gmail.com"
+        ]
+      }
+    ],
+    "mensagens": [
+      {
+        "nome": "artur",
+        "usuario": "artur70152@gmail.com",
+        "mensagens": [
+          "Você: .",
+          "Você: asd",
+          "Você: .",
+          "ppx",
+          "xcx",
+          "Você: fff",
+          "xcxzggggg",
+          "Você: oi artur",
+          "oi bruna",
+          "Você: oioi de novo",
+          "asda",
+          "xx",
+          "123",
+          "Você: RRRRR",
+          "acabei de adicionar",
+          ".",
+          ".",
+          "oi bruna"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "pedropaulo",
+    "doacoes": 0,
+    "normal": true,
+    "email": "pedropaulo@sga.pucminas.br",
+    "senha": "xxxx",
+    "foto": "",
+    "artes": [
+      {
+        "arte": "",
+        "name": "",
+        "curtidas": 0,
+        "usuariosQueCurtiram": [],
+        "comentarios": [
+          {
+            "usuario": "",
+            "texto": ""
+          }
+        ]
+      }
+    ],
+    "mensagens": [
+      {
+        "usuario": "",
+        "mensagens": []
+      }
+    ]
+  },
+  {
+    "name": "raphael",
+    "normal": true,
+    "doacoes": 0,
+    "email": "raphael122@gmail.com",
+    "senha": "123",
+    "foto": "",
+    "artes": [
+      {
+        "arte": "",
+        "name": "",
+        "curtidas": 0,
+        "usuariosQueCurtiram": [],
+        "comentarios": [
+          {
+            "usuario": "",
+            "texto": ""
+          }
+        ]
+      }
+    ],
+    "mensagens": [
+      {
+        "usuario": "",
+        "mensagens": []
+      }
+    ]
+  },
+  {
+    "name": "bruna11",
+    "normal": true,
+    "doacoes": 0,
+    "email": "bruna11@sga.com",
+    "senha": "123",
+    "foto": "",
+    "artes": [
+      {
+        "arte": "",
+        "name": "",
+        "curtidas": 0,
+        "usuariosQueCurtiram": [],
+        "comentarios": [
+          {
+            "usuario": "",
+            "texto": ""
+          }
+        ]
+      }
+    ],
+    "mensagens": [
+      {
+        "usuario": "",
+        "mensagens": []
+      }
+    ]
+  },
+  {
+    "name": "bruna123",
+    "normal": true,
+    "doacoes": 0,
+    "email": "artur7734@asda",
+    "senha": "123",
+    "foto": "",
+    "artes": [
+      {
+        "arte": "",
+        "name": "",
+        "curtidas": 0,
+        "usuariosQueCurtiram": [],
+        "comentarios": [
+          {
+            "usuario": "",
+            "texto": ""
+          }
+        ]
+      }
+    ],
+    "mensagens": [
+      {
+        "usuario": "",
+        "mensagens": []
+      }
+    ]
+  },
+  {
+    "name": "asdasdasdasd",
+    "normal": true,
+    "doacoes": 0,
+    "email": "asdasdasdasdxcx",
+    "senha": "123",
+    "foto": "",
+    "artes": [
+      {
+        "arte": "",
+        "name": "",
+        "curtidas": 0,
+        "usuariosQueCurtiram": [],
+        "comentarios": [
+          {
+            "usuario": "",
+            "texto": ""
+          }
+        ]
+      }
+    ],
+    "mensagens": [
+      {
+        "usuario": "",
+        "mensagens": []
+      }
+    ]
+  },
+  {
+    "name": "asda",
+    "normal": true,
+    "doacoes": 0,
+    "email": "xcx",
+    "senha": "xcxz",
+    "foto": "",
+    "artes": [
+      {
+        "arte": "",
+        "name": "",
+        "curtidas": 0,
+        "usuariosQueCurtiram": [],
+        "comentarios": [
+          {
+            "usuario": "",
+            "texto": ""
+          }
+        ]
+      }
+    ],
+    "mensagens": [
+      {
+        "usuario": "",
+        "mensagens": []
+      }
+    ]
+  }
+]
