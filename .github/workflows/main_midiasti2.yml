@@ -23,7 +23,15 @@ jobs:
       - name: Build com Maven
         run: mvn clean package
 
-     
+      - name: Copiar e renomear o JAR como app.jar
+        run: |
+          mkdir package
+          cp target/*.jar package/app.jar
+
+      - name: Compactar em deploy.zip
+        run: |
+          cd package
+          zip -r ../deploy.zip .
 
       - name: Deploy para Azure Web App
         uses: azure/webapps-deploy@v3
@@ -31,4 +39,4 @@ jobs:
           app-name: midiasti2
           slot-name: Production
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_MIDIASTI2 }}
-          package: target/app.jar
+          package: deploy.zip
