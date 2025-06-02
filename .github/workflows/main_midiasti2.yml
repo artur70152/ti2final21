@@ -23,10 +23,17 @@ jobs:
       - name: Build com Maven
         run: mvn clean package
 
-  
+      - name: Verificar arquivos gerados
+        run: ls -lh target/
 
+      - name: Encontrar e copiar JAR como app.jar
+        run: |
+          mkdir -p package
+          JAR_FILE=$(find target -name "*.jar" | head -n 1)
+          echo "Encontrado: $JAR_FILE"
+          cp "$JAR_FILE" package/app.jar
 
-      - name: Compactar em deploy.zip
+      - name: Compactar para deploy.zip
         run: |
           cd package
           zip -r ../deploy.zip .
