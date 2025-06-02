@@ -28,5 +28,5 @@ jobs:
         with:
           app-name: midiasti2
           slot-name: Production
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_MIDIASTI2 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F15E5D2503114DDA9DEFCF5BDC219878 }}
           package: target/app.jar
